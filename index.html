@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Daily News Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Poppins", sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background: #1e3a8a;
+      color: white;
+      padding: 15px 20px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    nav {
+      background: #2563eb;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      gap: 15px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+
+    nav a:hover {
+      background: #1e40af;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 20px auto;
+      padding: 10px;
+    }
+
+    .news-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 20px;
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+
+    .news-card:hover {
+      transform: scale(1.01);
+    }
+
+    .news-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .news-content {
+      padding: 15px;
+    }
+
+    .news-content h3 {
+      margin: 0;
+      color: #1e3a8a;
+    }
+
+    .news-content p {
+      color: #555;
+    }
+
+    footer {
+      background: #1e3a8a;
+      color: white;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>🗞️ Daily News Hub</header>
+
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Politics</a>
+    <a href="#">Sports</a>
+    <a href="#">Technology</a>
+    <a href="#">Entertainment</a>
+  </nav>
+
+  <div class="container">
+    <div class="news-card">
+      <img src="https://source.unsplash.com/900x400/?news,politics" alt="News Image">
+      <div class="news-content">
+        <h3>Government announces new education policy</h3>
+        <p>The new policy focuses on improving rural education and providing better digital learning tools for students.</p>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="https://source.unsplash.com/900x400/?sports" alt="Sports News">
+      <div class="news-content">
+        <h3>India wins the Cricket World Cup 2025!</h3>
+        <p>India triumphed in a thrilling final match, lifting the trophy for the third time in history.</p>
+      </div>
+    </div>
+
+    <div class="news-card">
+      <img src="https://source.unsplash.com/900x400/?technology" alt="Tech News">
+      <div class="news-content">
+        <h3>New smartphone launch breaks sales record</h3>
+        <p>The latest model from a leading tech giant sold over 10 million units in just 24 hours after release.</p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Daily News Hub | Created by Shivam Kumar Roy
+  </footer>
+</body>
+</html>
